@@ -1,18 +1,18 @@
 # Apache Geronimo, using Java 1.6
 FROM java:6
 
-MAINTAINER brian@jaxzin.com
+MAINTAINER jaydmchugh@gmail.com
 
 # Download Geronimo
-ADD http://apache.arvixe.com/geronimo/3.0.1/geronimo-tomcat7-javaee6-web-3.0.1-bin.tar.gz /apps/
+ADD http://apache.arvixe.com/geronimo/2.2.1/geronimo-tomcat6-javaee5-2.2.1-bin.tar.gz /apps/
 
 # Untar Geronimo
 WORKDIR /apps
-RUN /bin/tar -xzf /apps/geronimo-tomcat7-javaee6-web-3.0.1-bin.tar.gz
+RUN /bin/tar -xzf /apps/geronimo-tomcat6-javaee5-2.2.1-bin.tar.gz
 
 #ENV JAVA_HOME $(readlink -f /usr/bin/java | sed "s:bin/java::")
 ENV JAVA_HOME /usr/lib/jvm/java-6-openjdk-amd64/
-ENV GERONIMO_HOME /apps/geronimo-tomcat7-javaee6-web-3.0.1/
+ENV GERONIMO_HOME /apps/geronimo-tomcat6-javaee5-2.2.1/
 
 
 EXPOSE 1050
