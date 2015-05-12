@@ -14,7 +14,6 @@ RUN /bin/tar -xzf /apps/geronimo-tomcat6-javaee5-2.2.1-bin.tar.gz
 ENV JAVA_HOME /usr/lib/jvm/java-6-openjdk-amd64/
 ENV GERONIMO_HOME /apps/geronimo-tomcat6-javaee5-2.2.1/
 
-
 EXPOSE 1050
 EXPOSE 1099
 EXPOSE 1527
