@@ -1,3 +1,5 @@
+# This is still a WORK IN PROGRESS and does not yet work!
+
 # docker-geronimo
 
 Build a docker image for running Apache Geronimo.
