@@ -27,4 +27,4 @@ EXPOSE 9999
 EXPOSE 61616
 
 WORKDIR $GERONIMO_HOME/bin/
-CMD ["./geronimo", "run"]
+CMD ["./geronimo.sh", "run"]
